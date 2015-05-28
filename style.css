@@ -167,14 +167,14 @@ h1, h2 {
   background-color: #c63b6f;
 }
 
-#toc li a:active {
-  border-bottom: solid #b03060 1px;
-  top: 4px;
-  -webkit-transition: all 0 ease-out;  /* Safari 3.2+, Chrome */
-     -moz-transition: all 0 ease-out;  /* Firefox 4-15 */
-       -o-transition: all 0 ease-out;  /* Opera 10.5–12.00 */
-          transition: all 0 ease-out;  /* Firefox 16+, Opera 12.50+ */
-}
+/* #toc li a:active {
+/*   border-bottom: solid #b03060 1px;
+/*   top: 4px;
+/*   -webkit-transition: all 0 ease-out;  /* Safari 3.2+, Chrome */
+/*      -moz-transition: all 0 ease-out;  /* Firefox 4-15 */
+/*        -o-transition: all 0 ease-out;  /* Opera 10.5–12.00 */
+/*           transition: all 0 ease-out;  /* Firefox 16+, Opera 12.50+ */
+/* } */
 
 
 @media screen and (min-width:601px) {

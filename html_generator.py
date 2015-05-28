@@ -27,15 +27,30 @@ contents = [[
     ''']
         ]
 
+def generate_description(description):
+    '''
+    generate the long string with multi-paragraphs around by p tags.
+    '''
+    P_TAG = "<p></p>"
+    html_text = '''
+        '''
+    for line in description.splitlines():
+        if line.strip() != '':
+            html_text += P_TAG[0:3] + line.strip() + P_TAG[-4:] + "\n"
+
+    return html_text
+
 def generate_concept_HTML(concept_title, concept_description):
     html_text_1 = '''
 <div class="concept">
     <div class="concept-title">
         ''' + concept_title
+
     html_text_2 = '''
     </div>
     <div class="concept-description">
-        ''' + concept_description
+        ''' + generate_description(concept_description) 
+
     html_text_3 = '''
     </div>
 </div>'''
