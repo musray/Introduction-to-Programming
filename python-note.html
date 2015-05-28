@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Python note</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="logo">
+	<a href="index.html">
+		<img src="images/ms.png" alt="title logo">
+		   <span>Introduction to Programming</span>
+	</a>
+  </div>  
+  <div id="container">
+    <div class="table">
+      <p class="table-title">In This Article:</p>
+      <div class="table-of-content">
+        <a class="item-title" href="#item-1">What computer could do?</a>
+      </div>
+      <div class="table-of-content">
+        <a class="item-title" href="#item-2">The programming script</a>
+      </div>
+      <div class="table-of-content">
+        <a class="item-title" href="#item-3">About functions</a>
+      </div>
+      <div class="table-of-content">
+        <a class="item-title" href="#item-4">How to solve problems</a>
+      </div>
+      <div class="table-of-content">
+        <a class="item-title" href="#item-5">Frequently found coding errors</a>
+      </div>
+    </div>
+    <div class="article">
+      <h1 class="article-title" id="item-1">What computer could do?</h1>
+      <p>Playing audio and video? Writing article? Surfing internet?</p>
+      <p>There is no doubt that modern computer can perfectly do a lot of more things but not limited to above list. Although the computing ability has been improved tremendously 18 months by 18 months, the thing that a computer can do is always the same: </p>
+      <p>The thing that can be computed and solved in limited specific steps.</p>
+    </div>
+    <div class="article">
+      <h1 class="article-title" id="item-2">The programming script</h1>
+      <p>The programming script is a combination of bunch of instructions which could be executed by computer step by step. These instructions are what we people want the computer to do.</p>
+      <p>A script is always a plain text file stored in our computer's hard drive. When people run the script, an software called interpreter is called to read and execute the instructions in this script.</p>
+      <p>In python language, python is the interpreter, and the *.py files are the executed scripts.</p>
+    </div>
+    <div class="article">
+      <h1 class="article-title" id="item-3">About functions</h1>
+      <p>In the world of developers, nobody like repetition. To avoid this, smart developers like to put some instructions for a particular function into a capsuled text block. Then give a specific name to this block. When such function are needed, developers don't have to rewrite the whole thing again, but only call the name of the text block and all lines in this block would be executed.</p>
+      <p>That saves time and life.</p>
+      <p>This text block is called a function, or a procedure. Developer could refer to this function by the given name when it was defined.</p>
+      <p>Usually, a typical function or procedure might take <span class="em-in-article">INPUT</span> date from outside the function. Then the function could manipulate its input as the commands or instructions it has, and return a <span class="em-in-article">OUTPUT</span> to the outside world. Such as print some information on the screen, give a calculation result to other functions, etc.</p>
+    </div>
+    <div class="article">
+      <h1 class="article-title" id="item-4">How to solve problems</h1>
+      <p><cite>While there is problem, there is programming.</cite> </p>
+      <p>Computer is born to solve problem. But it is as stupid as they always be. Computer only can do what we people tell it to do. Actually, people have to know how to solve the problem by ourselves.</p>
+      <p>Some tasks are easy to put, like print "Hello World" or calculate sum of 13 and 7. These probably are not a problem. When it is coming to the real problems which are not so easy to figure out, these rules could be applied:</p>
+      <ul>
+        <li class="strong">Don't panic</li>
+        <li class="strong">What are the inputs?</li>
+        <li class="strong">What are the outputs?</li>
+        <li class="strong">Work through some examples by hand.</li>
+        <li class="strong">Simple mechanical solution.</li>
+        <li class="strong">Develop incrementally and test as we go.</li>
+      </ul>
+    </div>
+    <div class="article">
+      <h1 class="article-title" id="item-5">Frequently found coding errors</h1>
+      <p>Here are some errors always found in a python script:</p>
+      <dl>
+        <dt class="definition-title">missing colon</dt>
+        <dd>In such cases the colon might be missing:
+          <ul>
+            <li>def functionName():</li>
+            <li>if/else statement</li>
+            <li>for/while loops</li>
+          </ul>
+        </dd>
+        <dt class="definition-title">equal sign</dt>
+        <dd>When compare two values, mostly in if statement, the equal sign <span class="em-in-article">==</span> is often misused as assignment <span class="em-in-article">= .</span></dd> 
+        <dt class="definition-title">return statement</dt>
+        <dd>Although not all functions need return something, it is important to remember the <span class="em-in-article">return</span> statement where the output date need to be given out to other functions.</dd>
+        <dt class="definition-title">variable called before value assignment</dt>
+        <dd>In python, a variable must be assigned to a value before it would be called or used. Otherwise python interpreter would stop the program and cast an error as: <cite>name *** is not defined.</cite> Here *** stands for the variable name you'd like to refer to.</dd>
+      </dl>
+    </div>
+  </div>
+</body>
+</html>

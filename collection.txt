@@ -1,0 +1,45 @@
+contents = [["", ""],[],[]]
+            
+
+    
+    
+             
+    
+       
+    
+      How to solve problems
+      While there is problem, there is programming. 
+      Computer is born to solve problem. But it is as stupid as they always be. Computer only can do what we people tell it to do. Actually, people have to know how to solve the problem by ourselves.
+      Some tasks are easy to put, like print "Hello World" or calculate sum of 13 and 7. These probably are not a problem. When it is coming to the real problems which are not so easy to figure out, these rules could be applied:
+      
+        Don't panic
+        What are the inputs?
+        What are the outputs?
+        Work through some examples by hand.
+        Simple mechanical solution.
+        Develop incrementally and test as we go.
+      
+    
+    
+      Frequently found coding errors
+      Here are some errors always found in a python script:
+      
+        missing colon
+        In such cases the colon might be missing:
+          
+            def functionName():
+            if/else statement
+            for/while loops
+          
+        
+        equal sign
+        When compare two values, mostly in if statement, the equal sign == is often misused as assignment = . 
+        return statement
+        Although not all functions need return something, it is important to remember the return statement where the output date need to be given out to other functions.
+        variable called before value assignment
+        In python, a variable must be assigned to a value before it would be called or used. Otherwise python interpreter would stop the program and cast an error as: name *** is not defined. Here *** stands for the variable name you'd like to refer to.
+      
+    
+  
+
+

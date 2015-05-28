@@ -1,0 +1,246 @@
+/* Many of the rules are hard to understand at this moment! */
+/* I'll figure them out later one by one. */
+
+body {
+  background-color: #ededed;
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #414142;
+  margin: 0;
+  padding: 0 0 1em 0;
+  line-height: 1.5em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+#logo {
+  text-align: center;
+  background-color: #ededed;
+  padding: 2em 2em 3em 2em;
+}
+
+#logo a {
+  text-decoration: none;
+  color: #414142;
+  position: relative;
+}
+
+#logo span {
+  vertical-align: middle;
+  font-size: 2em;
+  /* font-family: "Bree Serif",serif; */
+  margin-left: .2em;
+}
+
+#container {
+  padding: 1em;
+  margin: 0 0 1em 0;
+  background-color: white;
+}
+
+#about {
+  max-width: 550px;
+  margin: 0 auto 2em;
+  padding: 0 1rem;
+}
+
+.nav-wrapper {
+  text-align: center;
+  padding: 1em 0;
+  clear: both;
+}
+
+a:visited {
+  color: #14375E;
+}
+
+a:link {
+  color: #414142;
+  text-decoration: none;
+}
+
+a.nav {
+  background-color: #d64078;
+  color: white;
+  border-radius: .3em;
+  padding: .2em 0;
+  position: relative;
+  margin: 0 1.5em;
+  width: 10em;
+  display: inline-block;
+  text-decoration: none;
+  border: solid #b03060 1px;
+  border-bottom: solid #b03060 4px;
+  text-shadow: 0px 2px 0 #b03060; 
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;	
+}
+
+a.nav:before {
+  height: 5px;
+  width: 100%;
+  background: white;
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: 0;
+}
+
+#links {
+  margin: 0 auto;
+  width: 390px;
+  text-align: center;
+  overflow: hidden;
+  line-height: 1.5em
+
+}
+
+#links span {
+  margin: 0 .2em;
+  white-space: nowrap;
+  border-bottom: solid dotted #ff0000;
+}
+
+.content {
+  max-width: 600px;
+  margin: 1em auto;
+}
+
+h1.content {
+  margin: .5em auto 1em;
+}
+
+h1 {
+  margin: 1.5em 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+h1, h2 {
+  /* font-family: 'Bree Serif', serif; */
+  font-weight: normal;
+}
+
+/* starting from this line down to bottom are rules for toc.html */
+#toc {
+  line-height: 1.5em;
+  padding-left: 0;
+}
+
+#toc ul {
+  padding: 0;
+  width: 90%;
+  margin: auto;
+}
+
+#toc li {
+  list-style-type:none; 
+  margin-bottom: .5em;
+}
+
+#toc li a {
+  display: block;
+  text-align: center;
+  padding: .5em;
+  color: #fff;
+  background-color: #D64078;
+  border: solid #B03060 1px;
+  border-bottom: solid #B03060 4px;
+  text-shadow: 0px 2px 0 #B03060;
+  border-radius: .3em;
+  position: relative;
+  -webkit-transition: all 0.1s ease-out;  /* Safari 3.2+, Chrome */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.5–12.00 */
+          transition: all 0.1s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+
+#toc li a:hover {
+  text-decoration: none;
+  background-color: #c63b6f;
+}
+
+#toc li a:active {
+  border-bottom: solid #b03060 1px;
+  top: 4px;
+  -webkit-transition: all 0 ease-out;  /* Safari 3.2+, Chrome */
+     -moz-transition: all 0 ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0 ease-out;  /* Opera 10.5–12.00 */
+          transition: all 0 ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+
+
+@media screen and (min-width:601px) {
+  #toc {
+    -moz-column-count: 2;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1em;
+    column-count: 2;
+    column-gap: 1em;
+    line-height: 1.2em;
+  }
+}
+
+.table {
+  max-width: 960px;
+  margin: 0 auto 2em;
+  padding: 0 1.5rem;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.table-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.article {
+  max-width: 960px;
+  margin: 0 auto 2em;
+  padding: 0 1rem;
+}
+
+.article-title {
+  background: #ededed;
+  padding: .5em;
+}
+
+a.item-title {
+  text-decoration: none;
+  color: #1199c3;
+  line-height: 2.5em;
+}
+
+a.fast-link {
+  border-bottom: 1px dotted grey;
+  color: #1199c3;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:580px) {
+  body {
+    font-size : 14px;
+  }
+}
+
+.em-in-article {
+  font-weight: bold;
+  border-bottom: 1px gray dotted;
+}
+
+.strong, .definition-title {
+  font-weight: bold;
+}
