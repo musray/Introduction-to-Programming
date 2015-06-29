@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Introduction to Programming</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/skin.css" />
+    <link type="image/png" rel="stylesheet" href="/images/favicon.ico" />
+</head>
+<body>
+  <div id="logo">
+  	<a href="/">
+      <img src="/images/ms.png" alt="title logo" />
+      <span>Introduction to Programming</span>
+    </a>
+  </div>
+
+  <!-- This is where the HTML page inserted.-->
+  {% block content%}
+  {% endblock %}
+  
+  <!-- This part is the Guestbook for every articles, except for main page and table of content -->
+
+  {% if page_name != "index" and page_name != "toc" %}
+    <h2>Leave me a message:</h2>
+    {% for comment in comments %}
+      <div id="comment_msg">
+        <p id="comment_title">Visitor said:</p>
+        <p id="comment_entry">{{ comment.content }}</p>
+        <hr />
+      </div>
+    {% endfor %}
+    {% set url_param = "/comment?page_name=" + page_name %}
+    <div id="comment_form">
+      <form action="{{url_param}}" method="post">
+        <textarea id="message" name="content" cols="70" rows="10" required placeholder='comment lenght is bigger than 3 charactors'></textarea>
+        <br />
+        <input type="submit" value="Leave me a message">
+      </form>
+    </div>
+  {% endif %}
+
+  <div id="footer">
+  </div>
+</body>
+</html>

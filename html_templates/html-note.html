@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Introduction to Programming - HTML notes</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="logo">
-	<a href="mainpage.html">
-	  <img src="images/ms.png" alt="title logo">
-	  <span>Introduction to Programming</span>
-	</a>
-  </div>  
+{% extends "base.html" %}
+
+{% block content %}
   <div id="container">
     <div class="table">
       <p class="table-title">In This Article:</p>
@@ -32,5 +21,5 @@
       <p>The elements are usually made up of an opening tag and a close tag(has an back slash in it).Some tags which only have a open tag but without an closing tag are <span class="em-in-article">void element</span>. </p>
     </div>
   </div>
-</body>
-</html>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+  <div id="container">
+    <div class="table">
+      <p class="table-title">In This Article:</p>
+      <div class="table-of-content">
+        <a class="item-title" href="#item-1">Server and Google App Engine</a>
+      </div>
+      <div class="table-of-content">
+        <a class="item-title" href="#item-2">The importance of input validation</a>
+      </div>
+      <div class="table-of-content">
+        <a class="item-title" href="#item-3">Template Abstraction</a>
+      </div>
+    </div>
+    <div class="article">
+      <h1 id="item-1" class="article-title">Server and Google App Engine</h1>
+      <p>Server is a remote computer or computers on which the user's request are processed and responded. </p>
+      <p>The client communicate to server under a fixed protocol, which is called <span class="em-in-article">HTTP</span>. Server can get the client's request by several methods, GET and POST are mainly used among all the methods.</p>
+      <p>With the information the server gets from client request, it can do many computations or validations, then respond the request in a given behavior, such as send a document back to the client.</p>
+      <p>Building a real web server is complicated, and expensive. Google App Engine is a friendly application server running on Google's cloud infrastructure. Once the user easily deploying their web application on GAE, it's accessed to everyone immediately!</p>
+    </div>
+    <div class="article">
+      <h1 id="item-2" class="article-title">The importance of input validation</h1>
+      <p>If web page are designed to allow user input, that gives the chance to change the data on the server. This can be dangerous. If there is no proper validation on what the user's input but let it save on the server, some code might be injected to our server, such as a piece of HTML code which might change our rendered web page,even some code could do even worse things.</p>
+      <p>Although most of users are nice people, they don't meant to hurt anyone, they just make mistake when input a data. Input validation can help both client and server to be more efficient.</p>
+    </div>
+    <div class="article">
+      <h1 id="item-3" class="article-title">Template Abstraction</h1>
+      <p><a href="http://jinja.pocoo.org" target="_blank">Jinja2</a> is a template engine build in GAE. For my experience, there are at least 3 advantages when use Jinja2:</p>
+      <ul>
+        <li> It is much more easier to set identical style and structure of web application.  </li>
+        <li>It is much more easier to change basic contents or styles through many different pages.</li>
+        <li>Python statements could easily running in HTML, this make the web page more logical. </li>
+      </ul>
+      <p>All great features of using a template are pointed to reduce repetition, which helps to minimize errors, to save time, to make everything unified. </p>
+    </div>
+
+  </div>
+
+{% endblock %}

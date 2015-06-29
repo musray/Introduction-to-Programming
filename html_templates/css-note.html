@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Introduction to Programming - CSS</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="logo">
-	<a href="mainpage.html">
-      <img src="images/ms.png" alt="title logo">
-	  <span>Introduction to Programming</span>
-	</a>
-  </div>  
+{% extends "base.html" %}
+{% block content %}
   <div id="container">
     <div class="table">
       <p class="table-title">In This Article:</p>
@@ -36,5 +24,5 @@
       <p>This could avoid repetition, which is truly loved by developers.</p>
     </div>
   </div>
-</body>
-</html>
+
+{% endblock %}

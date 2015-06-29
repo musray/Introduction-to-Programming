@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Introduction to Programming</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="logo">
-	<a href="mainpage.html">
-		<img src="images/ms.png" alt="title logo">
-		   <span>Introduction to Programming</span>
-	</a>
-  </div>  
+{% extends "base.html" %}
+
+{% block content %}
   <div id="container">
     <div class="table">
       <p class="table-title">In This Article:</p>
@@ -46,5 +35,4 @@
       <p>IE probably is not the best choice. Chrome, Firefox and Safari are the most popular browsers for developing. They are fast, reliable, easy-to-use and extendible. And all of them have developer tool for you to check the HTML and CSS behind the web page you are watching. This function is desired by learning web development.</p>
     </div>
   </div>
-</body>
-</html>
+{% endblock %}

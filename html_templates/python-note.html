@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Python note</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="logo">
-	<a href="index.html">
-		<img src="images/ms.png" alt="title logo">
-		   <span>Introduction to Programming</span>
-	</a>
-  </div>  
+{% extends "base.html" %}
+
+{% block content %}
   <div id="container">
     <div class="table">
       <p class="table-title">In This Article:</p>
@@ -116,5 +105,5 @@
       <p>In python programming, we define a class to represent an object. As soon as the class is defined, an instance of this class can be made and used without thinking about the details behind the scene. </p>
     </div>
   </div>
-</body>
-</html>
+
+{% endblock %}

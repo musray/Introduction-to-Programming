@@ -142,16 +142,6 @@ h1, h2 {
   text-decoration: none;
   background-color: #c63b6f;
 }
-/* #toc li a:active {
-/*   border-bottom: solid #b03060 1px;
-/*   top: 4px;
-/*   -webkit-transition: all 0 ease-out;  /* Safari 3.2+, Chrome */
-/*      -moz-transition: all 0 ease-out;  /* Firefox 4-15 */
-/*        -o-transition: all 0 ease-out;  /* Opera 10.5–12.00 */
-/*           transition: all 0 ease-out;  /* Firefox 16+, Opera 12.50+ */
-/* } */
-
-}
 .table {
   max-width: 960px;
   margin: 0 auto 2em;
@@ -193,6 +183,18 @@ blockquote {
   font-size:1.2em;
   font-family: times serif;
   font-style: italic;
+}
+#comment_title {
+  margin: 0 0 0 3em;
+  padding: 0;
+}
+#comment_entry {
+  margin: 0 0 0 3em; 
+  padding: 0;
+}
+#comment_form {
+  padding-left: 10em;
+  margin:1em 1em 0 1em;
 }
 @media screen and (max-width: 750px) {
   body {
